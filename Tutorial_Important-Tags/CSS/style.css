@@ -1,0 +1,12 @@
+.rubrik{
+    color: aquamarine;
+}
+
+#OurParagraph{
+    color: brown;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-radius: 15px;
+  }
