@@ -3,7 +3,7 @@ body{
   color: rgb(209, 20, 206);
   text-decoration-color: black;
   font-family: "Akshar";
-  padding-left: 60px;
+  padding-left: 40px;
   padding-top: 25px;
 }
 
@@ -23,4 +23,13 @@ body{
 
 .Description h3{
   background-color: blue;
+}
+
+table, th, td{
+  border: solid 5px blue;
+  border-radius: 1px;
+  background-color: rgb(240, 218, 19);
+}
+
+.Sjukhus{
 }
