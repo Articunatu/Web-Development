@@ -1,3 +1,26 @@
-.Menu:active {
-    color: green;
+body{
+  background-color: aqua;
+  color: rgb(209, 20, 206);
+  text-decoration-color: black;
+  font-family: "Akshar";
+  padding-left: 60px;
+  padding-top: 25px;
+}
+
+.Menu ul li a {
+  color: rgb(209, 20, 206);
+  text-decoration: none;
   }
+
+.Menu ul li a:hover {
+    background-color: rgb(76, 215, 66);
+  }
+
+.Menu ul li a.active {
+    background-color: rgb(240, 218, 19);
+  }
+
+
+.Description h3{
+  background-color: blue;
+}

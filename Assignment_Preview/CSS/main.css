@@ -46,3 +46,11 @@ body{
     color: #fff;
     overflow: hidden;
 }
+
+.header .navbar .container ul li a:hover{
+    color: greenyellow;
+}
+
+.header .navbar .container ul li a:active{
+    color: red;
+}
