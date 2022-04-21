@@ -1,0 +1,48 @@
+/* start main rules */
+body{
+    height: 40000px;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+/* end main rules */
+
+.header .slider{
+    background-image: url(/Images/environment_climate_change_0.jpg);
+    background-size: cover;
+    height: 800px;
+}
+
+.header .slider .intro{
+    padding: 350px;
+    height: 600px;
+    text-align: center;
+    color: black;
+}
+
+.header .slider .intro h1{
+    margin:  0 auto;
+    font-size:  50px;
+    width: 600px;
+    border-top: 3px solid #fff;
+    border-bottom: 10px solid #fff;
+    padding: 10px 30px;
+}
+
+.header .slider .intro button{
+    background: none;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+.header .navbar{
+    background-color: #252f31;
+    color: #fff;
+    overflow: hidden;
+}
