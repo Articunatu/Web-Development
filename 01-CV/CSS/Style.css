@@ -39,26 +39,14 @@ table, th, td{
   width: 95%;
 }
 
-/* .Education{
-  height: 85%;
-}
-
-.Jobs{
-  height: 85%;
-} */
-
-/* @media (max-width: 600px)
-{
-
-} */
-
 .overlay{
   visibility: hidden;    
   }
 
 .overlay:target{
       visibility: visible;
-  }
+}
+
 .window {
   
   background-color: blue;
