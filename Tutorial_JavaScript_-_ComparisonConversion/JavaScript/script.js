@@ -30,6 +30,7 @@ console.log('23' / '2')
 console.log('23' > '20')
 console.log('22.55' + '11.34' + 11.45)
 
+
 /// Equality
 const MyAge = 33
 if (MyAge === 33) 
@@ -37,3 +38,25 @@ console.log('Your age is 33') //=== has no conversion, more safe
 
 if(MyAge == 33)
 console.log('Your age is 33 type correction') //== converts the type to a string, less safe
+
+
+/// Switch
+const day = 'thursday'
+switch(day)
+{
+    case 'monday': console.log('Lektion på plats varannan vecka ') 
+    break
+    case 'tuesday' : console.log('Lektion på distans')
+    break
+    case 'wednesday' :
+        case 'thursday' :
+            case 'wednesday' :
+                console.log('Lektion på distans')
+                break
+                case 'saturday':
+                    case 'sunday':
+                        console.log('Enjoy the weekend')
+                        break
+                        default:
+                            console.log('Not a valid day')
+}
