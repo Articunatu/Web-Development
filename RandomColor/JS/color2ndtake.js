@@ -9,5 +9,5 @@ for(i=0;i<6;i++){
 
 let colorDisplay = (`#${selectedColor.join("")}`)
 
-document.body.append(colorDisplay)
+document.body.append(colorDisplay).style
 document.body.style.backgroundColor = colorDisplay
