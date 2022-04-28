@@ -213,9 +213,9 @@ body{
     margin-left: 50px;
 }
 
-.my-skills .progress .skill h3{
+/* .my-skills .progress .skill h3{
     background-color: #555;
-}
+} */
 
 .my-skills .progress .skill div{
     background-color: #f2f2f2;
@@ -232,5 +232,80 @@ body{
     color: #fff;
     font-weight: bold;
 }
-
 /* End Skills */
+
+/* Start Frame */
+.my-button{
+    background: none;
+    border: 3px solid #21a265;
+    padding: 10px 30px;
+    color: #21a265;
+    font-weight: bold;
+}
+
+/* End Frame */
+
+/* Start Resume  */
+.resume{
+    background-color: #ebebeb;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.resume h2{
+    /* text-align: center; */
+    text-transform: uppercase;
+}
+
+.resume .my-button{
+    background-color: white;
+}
+
+.resume p{
+    line-height: 1.5;
+    color: #6666;
+    padding: 0 20px;
+}
+
+.resume .my-button{
+    margin-top: 15px;
+}
+/* End Resume */
+
+/* Start Education */
+.my-education{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.my-education .main, .my-education .exp{
+    width: 50%;
+    float: left;
+}
+
+.my-education .main h2{
+    margin: 25px 0 20px 40px;
+    color: #555;
+}
+
+.my-education .main p{
+    margin: 0 0 10px 40px;
+}
+
+.my-education .main p:last-of-type{
+    margin-top: 30px;
+}
+
+/* End Education */
+
+/* Start Test */
+.test{
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/* End Test */
