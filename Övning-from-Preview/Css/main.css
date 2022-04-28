@@ -231,6 +231,11 @@ body{
     text-align: right;
     color: #fff;
     font-weight: bold;
+    transition: width 1.0s linear;
+    -webkit-transition: width 1.0s linear;
+    -moz-transition: width 1.0s linear;
+    -ms-transition: width 1.0s linear;
+    -o-transition: width 1.0s linear;
 }
 /* End Skills */
 
