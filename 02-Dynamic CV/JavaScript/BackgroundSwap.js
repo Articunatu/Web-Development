@@ -1,4 +1,8 @@
-var button = document.querySelector('button');
+window.onload = function(){ 
+  // your code 
+  var button = document.querySelector('.colorButton');
 button.onclick = function() {
-  document.body.append
+  document.body.style.backgroundColor = "red"
 }
+};
+

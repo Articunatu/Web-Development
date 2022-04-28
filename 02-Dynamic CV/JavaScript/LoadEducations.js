@@ -1,21 +1,52 @@
 
+let http = new XMLHttpRequest()
 
-var myInit = { method: 'GET', 
-               headers: {
-                   'Content-Type': 'application/json'
-               },
-            mode: 'cors',
-            cache: 'default'};
+http.open('get', 'educations.json', true)
 
-    let myRequest = new Request("/JSON/loadEducations.jason", myInit)
+http.send()
 
-    fetch(myRequest)
-    .then(function(resp){
-        return resp.json()
-    })
-    .then(function(data){
-        document.body.append(data.name)
-    })
+http.onload = function()
+{
+    if(this.readyState == 4 && this.status == 200)
+    {
+        let educations = JSON.parse(this.responseText)
+        let output = "";
+
+        for(let item of educations)
+        {
+            console.log("HEj")
+            output += `
+            <h3>Utbildningar</h3>
+                <ul>
+                <li>${item.name}</li>
+                <li>${item.timePeriod}</li>
+                </ul>
+        `
+        }
+        document.querySelector(".educations").innerHTML = output
+    }
+}
+
+
+
+
+
+// var myIn'it = { method: 'GET', 
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             mode: 'cors',
+//             cache: 'default'};
+
+//     let myRequest = new Request("/JSON/loadEducations.jason", myInit)
+
+//     fetch(myRequest)
+//     .then(function(resp){
+//         return resp.json()
+//     })
+//     .then(function(data){
+//         document.body.append(data.name)
+//     })
 
 
 // const jobs = [
