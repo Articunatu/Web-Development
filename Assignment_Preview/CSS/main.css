@@ -9,6 +9,8 @@ body{
 
 /* end main rules */
 
+
+/* Start Header */
 .header .slider{
     background-image: url(/Images/environment_climate_change_0.jpg);
     background-size: cover;
@@ -47,6 +49,40 @@ body{
     overflow: hidden;
 }
 
+.header .navbar h2{
+    float: left;
+    text-transform: uppercase;
+}
+ 
+.header .navbar h2 span{
+    color: aquamarine;
+}
+ 
+.header .navbar ul{
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: right;
+}
+ 
+.header .navbar ul li{
+    float: left;
+    padding: 10px;
+}
+ 
+.header .navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+ 
+.header .navbar ul li.active a{
+    color: #21a265;
+}
+ 
+.header .navbar ul li a:hover{
+    color: #dbbf0c;
+}
+
 .header .navbar .container ul li a:hover{
     color: greenyellow;
 }
@@ -54,6 +90,33 @@ body{
 .header .navbar .container ul li a:active{
     color: red;
 }
+
+/* end Header*/
+
+/* Start Features */
+ 
+.features{
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+ 
+.features .notabug{
+    float: left;
+    width: 100/3%;
+    height: 150px;
+}
+ 
+.features .notabug h3{
+    color: aquamarine;
+}
+ 
+.features .notabug p{
+    line-height: 1.5;
+    color: #b8b8b8;
+}
+ 
+/* end Features */
 
 /* Start About Me */
 
