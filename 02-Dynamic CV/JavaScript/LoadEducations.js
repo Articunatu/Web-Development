@@ -14,7 +14,6 @@ http.onload = function()
 
         for(let item of educations)
         {
-            console.log("HEj")
             output += `
             <h3>Utbildningar</h3>
                 <ul>
