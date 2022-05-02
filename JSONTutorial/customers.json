@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Albert",
+      "company": "Ikea",
+      "startdatum": "2019-06-29"
+    },
+    {
+      "id": 2,
+      "name": "Sara",
+      "company": "Coop",
+      "startdatum": "2021-04-26"
+    },
+    {
+      "id": 3,
+      "name": "Anders",
+      "company": "Volvo",
+      "startdatum": "2021-08-17"
+    }
+  ]
