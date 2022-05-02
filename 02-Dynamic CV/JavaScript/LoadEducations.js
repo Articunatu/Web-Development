@@ -1,30 +1,54 @@
 
-let http = new XMLHttpRequest()
-
-http.open('get', 'educations.json', true)
-
-http.send()
-
-http.onload = function()
-{
-    if(this.readyState == 4 && this.status == 200)
+let educations = [
     {
-        let educations = JSON.parse(this.responseText)
-        let output = "";
+        "name": "Molekylärbiologi - Göteborgs Universitet",
+        "timePeriod": "2014-2017"
+    },
+    {
+        "name": "Elektroingenjör - Chalmers",
+        "timePeriod": "2012-2014"
+    }
+]
+
+        let output = `<h3>Utbildningar</h3>`;
 
         for(let item of educations)
         {
             output += `
-            <h3>Utbildningar</h3>
                 <ul>
-                <li>${item.name}</li>
-                <li>${item.timePeriod}</li>
+                <p style=font-weight: bold>${item.name}</p>
+                <p style=font-size: small;>${item.timePeriod}</p>
                 </ul>
         `
         }
         document.querySelector(".educations").innerHTML = output
-    }
-}
+
+// let http = new XMLHttpRequest()
+
+// http.open('get', 'educations.json', true)
+
+// http.send()
+
+// http.onload = function()
+// {
+//     if(this.readyState == 4 && this.status == 200)
+//     {
+//         let educations = JSON.parse(this.responseText)
+//         let output = "";
+
+//         for(let item of educations)
+//         {
+//             output += `
+//             <h3>Utbildningar</h3>
+//                 <ul>
+//                 <li>${item.name}</li>
+//                 <li>${item.timePeriod}</li>
+//                 </ul>
+//         `
+//         }
+//         document.querySelector(".educations").innerHTML = output
+//     }
+// }
 
 
 
