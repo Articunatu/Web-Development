@@ -1,27 +1,44 @@
 
-let educations = [
-    {
-        "name": "Molekylärbiologi - Göteborgs Universitet",
-        "timePeriod": "2014-2017"
-    },
-    {
-        "name": "Elektroingenjör - Chalmers",
-        "timePeriod": "2012-2014"
-    }
-]
+// let educations = [
+//     {
+//         "name": "Molekylärbiologi - Göteborgs Universitet",
+//         "timePeriod": "2014-2017"
+//     },
+//     {
+//         "name": "Elektroingenjör - Chalmers",
+//         "timePeriod": "2012-2014"
+//     }
+// ]
 
-        let output = `<h3>Utbildningar</h3>`;
+//         let output = `<h3>Utbildningar</h3>`;
 
-        for(let item of educations)
-        {
-            output += `
-                <ul>
-                <p style=font-weight: bold>${item.name}</p>
-                <p style=font-size: small;>${item.timePeriod}</p>
-                </ul>
-        `
-        }
-        document.querySelector(".educations").innerHTML = output
+//         for(let item of educations)
+//         {
+//             output += `
+//                 <ul>
+//                 <p style=font-weight: bold>${item.name}</p>
+//                 <p style=font-size: small;>${item.timePeriod}</p>
+//                 </ul>
+//         `
+//         }
+//         document.querySelector(".educations").innerHTML = output
+ async function load(){
+    const respo = await fetch('/educations.json')
+    const text = await respo.json();
+    return text;
+    // .then(data => console.log(data));
+}
+
+// console.log(await load())
+
+async function test(){
+    
+    let x = await load();
+   console.log(x)
+           
+}
+
+test();
 
 // let http = new XMLHttpRequest()
 
@@ -49,8 +66,6 @@ let educations = [
 //         document.querySelector(".educations").innerHTML = output
 //     }
 // }
-
-
 
 
 
