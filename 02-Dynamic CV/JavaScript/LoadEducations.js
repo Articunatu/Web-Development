@@ -1,21 +1,75 @@
 
+let educations = [
+    {
+        "name": "Molekylärbiologi - Göteborgs Universitet",
+        "timePeriod": "2014-2017"
+    },
+    {
+        "name": "Elektroingenjör - Chalmers",
+        "timePeriod": "2012-2014"
+    }
+]
 
-var myInit = { method: 'GET', 
-               headers: {
-                   'Content-Type': 'application/json'
-               },
-            mode: 'cors',
-            cache: 'default'};
+        let output = `<h3>Utbildningar</h3>`;
 
-    let myRequest = new Request("/JSON/loadEducations.jason", myInit)
+        for(let item of educations)
+        {
+            output += `
+                <ul>
+                <p style=font-weight: bold>${item.name}</p>
+                <p style=font-size: small;>${item.timePeriod}</p>
+                </ul>
+        `
+        }
+        document.querySelector(".educations").innerHTML = output
 
-    fetch(myRequest)
-    .then(function(resp){
-        return resp.json()
-    })
-    .then(function(data){
-        document.body.append(data.name)
-    })
+// let http = new XMLHttpRequest()
+
+// http.open('get', 'educations.json', true)
+
+// http.send()
+
+// http.onload = function()
+// {
+//     if(this.readyState == 4 && this.status == 200)
+//     {
+//         let educations = JSON.parse(this.responseText)
+//         let output = "";
+
+//         for(let item of educations)
+//         {
+//             output += `
+//             <h3>Utbildningar</h3>
+//                 <ul>
+//                 <li>${item.name}</li>
+//                 <li>${item.timePeriod}</li>
+//                 </ul>
+//         `
+//         }
+//         document.querySelector(".educations").innerHTML = output
+//     }
+// }
+
+
+
+
+
+// var myIn'it = { method: 'GET', 
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             mode: 'cors',
+//             cache: 'default'};
+
+//     let myRequest = new Request("/JSON/loadEducations.jason", myInit)
+
+//     fetch(myRequest)
+//     .then(function(resp){
+//         return resp.json()
+//     })
+//     .then(function(data){
+//         document.body.append(data.name)
+//     })
 
 
 // const jobs = [
