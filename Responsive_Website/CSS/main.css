@@ -1,0 +1,120 @@
+@import url('https://us02st1.zoom.us/web_client/1q1nf58/html/externalLinkPage.html?ref=https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+:root{
+    color: #6c5ce7;
+}
+
+*{
+    font-family: 'Poppins, sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+.heading{
+    margin: 2rem;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    position: relative;
+    letter-spacing: 2rem;
+    color: #6c5ce7;
+}
+
+.heading::before , .heading::after{
+    content: "";
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top: 4rem solid #6c5ce7;
+    border-left: 4rem solid #6c5ce7;
+}
+
+.heading::before{
+    top: 5.8rem;
+    left: -2rem;
+}
+
+.heading::after{
+    bottom: 5rem;
+    right: -2rem;
+    transform: rotate(180deg);
+}
+
+.btn{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    background: #6c5ce7;
+    color: #fff;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    box-shadow: 0 .2rem rgb(0, 0, 1);
+}
+
+.btn:hover{
+    letter-spacing: 1rem;
+    opacity: 8;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header .logo{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.header .logo i{
+    padding: 0 .5rem;
+}
+
+.header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .navbar ul li{
+    margin: 0 1.5rem;
+}
+
+.header .navbar ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.header .navbar ul li a:hover{
+    color: #ccc;
+}
+
+.header .fa-bars{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
