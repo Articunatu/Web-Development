@@ -12,8 +12,8 @@ async function PrintEducations(){
     {
         output += `
             <ul>
-                <p style=font-weight: bold>${item.name}</p>
-                <p style=font-size: small>${item.timePeriod}</p>
+                <p>${item.name}
+                <br/>${item.timePeriod}</p>
             </ul>
             `
     }
