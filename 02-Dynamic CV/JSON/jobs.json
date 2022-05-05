@@ -1,5 +1,14 @@
 [
-    {"name":"Lundby Sjukhus", "timePeriod": "2013-2020"},
-    {"name":"Region Halland", "timePeriod": "2020-nu"},
-    {"name:": "Lundby Sjukhus", "timePeriod": "2017-2019"}
+    {
+        "name": "PostNord", 
+        "timePeriod": "2013-2020"
+    },
+    {
+        "name": "Region Halland", 
+        "timePeriod": "2020-nu"
+    },
+    {
+        "name": "Lundby Sjukhus", 
+        "timePeriod": "2017-2019"
+    }
 ]
