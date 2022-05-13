@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
+import * as React from "react";
 
 export default function Portfolio()
 {
@@ -30,9 +31,9 @@ export default function Portfolio()
     <div className="App">
         <nav>
             <ul className="my-list">
-                <li><Link to="/web-development/">Home</Link> </li>
+                <li><Link to="/Web-Development/">Home</Link> </li>
                 <li>Experience</li>
-                <li><Link to="/web-development/portfolio">Portfolio</Link> </li>
+                <li><Link to="//Web-Development/portfolio">Portfolio</Link> </li>
             </ul>
         </nav>
         <main>

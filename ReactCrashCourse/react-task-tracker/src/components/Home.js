@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import * as React from "react";
 
 export default function Experience() {
     return (
@@ -6,8 +7,8 @@ export default function Experience() {
             <nav>
                 <ul className="my-list">
                     <li>Home</li>
-                    <li><Link to="/web-development/expeience">Experience</Link></li>
-                    <li><Link to="/web-development/portfolio">Portfolio</Link> </li>
+                    <li><Link to="/Web-Development/expeience">Experience</Link></li>
+                    <li><Link to="/Web-Development/portfolio">Portfolio</Link> </li>
                 </ul>
             </nav>
             <main>
