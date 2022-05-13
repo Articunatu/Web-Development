@@ -9,11 +9,11 @@ function App() {
   return(
     <div className="App">
       <Routes>
-        <Route exact path="Web-Development" />
-        <Route path="/Web-Development" element={<Home/>} />
-        <Route path="/Web-Development/home" element={<Home/>} />
-        <Route path="/Web-Development/experience" element={<Experience/>} />
-        <Route path="/Web-Development/portfolio" element={<Portfolio/>} />
+        <Route exact path="react-task-tracker" />
+        <Route path="/react-task-tracker" element={<Home/>} />
+        {/* <Route path="/react-task-tracker/home" element={<Home/>} /> */}
+        <Route path="/react-task-tracker/experience" element={<Experience/>} />
+        <Route path="/react-task-tracker/portfolio" element={<Portfolio/>} />
       </Routes>
     </div>
   )

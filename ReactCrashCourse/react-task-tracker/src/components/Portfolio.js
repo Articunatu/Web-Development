@@ -31,9 +31,9 @@ export default function Portfolio()
     <div className="App">
         <nav>
             <ul className="my-list">
-                <li><Link to="/Web-Development/">Home</Link> </li>
+                <li><Link to="/react-task-tracker/">Home</Link> </li>
                 <li>Experience</li>
-                <li><Link to="//Web-Development/portfolio">Portfolio</Link> </li>
+                <li><Link to="/react-task-tracker/portfolio">Portfolio</Link> </li>
             </ul>
         </nav>
         <main>
