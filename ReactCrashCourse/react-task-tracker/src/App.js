@@ -1,19 +1,20 @@
 import './App.css';
 import React from 'react';
-import { Header } from './components/Header';
+import Experience from './components/Experience';
+import Home from './components/Home';
+import Portfolio from './components/Portfolio';
 
-const App = () => {
-  return (
-    <div className="Container">
-      <Header/>
+function App() {
+  return(
+    <div className="App">
+      <Routes>
+        <Route exact path="web-development" />
+        <Route path="/web-development" element={<Home />} />
+        <Route path="/web-development/experience" element={<Experience />} />
+        <Route path="/web-development/portfolio" element={<Portfolio />} />
+      </Routes>
     </div>
-  );
+  )
 }
-
-// class App extends React.Component {
-//   render() {
-//     return <h1>Hello from a class</h1>
-//   }
-// }
 
 export default App
