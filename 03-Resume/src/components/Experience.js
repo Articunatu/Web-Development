@@ -14,7 +14,7 @@ export default function Experience()
 
             <nav>
                 <ul className="Menu">
-                    <li ><Link to="/web-development/home">Presentation</Link> </li>
+                    <li ><Link to="/web-development/">Presentation</Link> </li>
                     <li>Erfarenheter</li>
                     <li><Link to="/web-development/portfolio">Portfolio</Link> </li>
                     <li><Link to="/web-development/contacts">Kontakter</Link> </li>
