@@ -10,7 +10,7 @@ export default function Contacts(){
             </div>
             <nav>
                 <ul className="Menu">
-                    <li><Link to="/web-development/">Presentation</Link> </li>
+                    <li><Link to="/web-development/home">Presentation</Link> </li>
                     <li><Link to="/web-development/expeience">Erfarenheter</Link></li>
                     <li><Link to="/web-development/portfolio">Portfolio</Link> </li>
                     <li>Kontakter</li>

@@ -39,5 +39,5 @@ export default function Home() {
 
 
 function BackgroundSwap() {
-    document.body.style.backgroundColor = "blue"
+    document.body.style.backgroundColor = "green"
 }

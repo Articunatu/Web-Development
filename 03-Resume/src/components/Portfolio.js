@@ -44,7 +44,7 @@ export default function Portfolio() {
 
         <nav>
             <ul className="Menu">
-                <li><Link to="/web-development/">Presentation</Link> </li>
+                <li><Link to="/web-development/home">Presentation</Link> </li>
                 <li><Link to="/web-development/expeience">Erfarenheter</Link></li>
                 <li>Portfolio</li>
                 <li><Link to="/web-development/contacts">Kontakter</Link> </li>

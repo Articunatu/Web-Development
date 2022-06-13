@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./index.css";
 import "./App.css";
 import Home from "./components//Home";
@@ -12,7 +12,7 @@ function App() {
         <div className="App">
             <Routes>
                 <Route exact path="web-development" />
-                <Route path="/web-development/" element={<Home />} />
+                <Route path="/web-development/home" element={<Home />} />
                 <Route path="/web-development/expeience" element={<Experience />} />
                 <Route path="/web-development/portfolio" element={<Portfolio />} />
                 <Route path="/web-development/contacts" element={<Contacts />} />
